@@ -1,11 +1,11 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "CRM softwares research",
     "author": {
-      "name": "Jose Felix",
-      "summary": "who works building clean user interfaces with React."
+      "name": "Team TechCentred",
+      "summary": "produces software buying guides"
     },
-    "description": "A blog created with Next.js and Tailwind.css",
+    "description": "",
     "siteUrl": "https://nextjs-starter-blog-demo.netlify.app/",
     "language": "en-US",
     "social": {

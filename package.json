@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-blog-starter",
+  "name": "what-is-crm",
   "version": "0.2.0",
-  "description": "A Next.js template for a blog website.",
+  "description": "a guide for crm softwares",
   "private": true,
   "scripts": {
     "dev": "next dev",

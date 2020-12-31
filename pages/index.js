@@ -1,7 +1,5 @@
-import Link from "next/link";
 
 import { Layout, Bio, SEO } from "@components/common";
-import { getSortedPosts } from "@utils/posts";
 
 export default function Home() {
   return (

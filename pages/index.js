@@ -3,38 +3,18 @@ import Link from "next/link";
 import { Layout, Bio, SEO } from "@components/common";
 import { getSortedPosts } from "@utils/posts";
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="What is CRM" />
       <Bio className="my-14" />
-      {posts.map(({ frontmatter: { title, description, date }, slug }) => (
-        <article key={slug}>
-          <header className="mb-2">
-            <h3 className="mb-2">
-              <Link href={"/post/[slug]"} as={`/post/${slug}`}>
-                <a className="text-4xl font-bold text-yellow-600 font-display">
-                  {title}
-                </a>
-              </Link>
-            </h3>
-            <span className="text-sm">{date}</span>
-          </header>
-          <section>
-            <p className="mb-8 text-lg">{description}</p>
-          </section>
-        </article>
-      ))}
+      <h1> What is CRM ? </h1>
+      <p> What is CRM software ? How to implement an efficient CRM system for your organisaiton. 
+         Check this space to get latest updates on .
+        
+      <a className="text-4xl font-bold text-yellow-600 font-display" href= "https://techcentred.com/top-5-best-crm-software-for-every-business/">
+                  best crm softwares
+                </a></p>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const posts = getSortedPosts();
-
-  return {
-    props: {
-      posts,
-    },
-  };
 }

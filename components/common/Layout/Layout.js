@@ -11,11 +11,6 @@ export function Layout({ children }) {
       <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
-        <footer className="text-lg font-light">
-          © {new Date().getFullYear()}, Built with{" "}
-          <a href="https://nextjs.org/">Next.js</a>
-          &#128293;
-        </footer>
       </div>
     </div>
   );
